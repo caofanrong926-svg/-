@@ -10,5 +10,9 @@
 3. 在 GitHub/VS Code 里如何“点击保存”；
 4. Windows 电脑一步一步运行方法；
 5. 运行命令和注意事项；
+<<<<<<< codex/create-ai-analysis-tool-for-rail-cost
 6. Windows 双击运行脚本 `run.bat` 的用法；
 7. Windows 自定义输入脚本 `run_custom.bat` 的用法。
+=======
+6. Windows 双击运行脚本 `run.bat` 的用法。
+>>>>>>> main
