@@ -174,3 +174,30 @@ rail-cost-ai --input samples\sample_budget.xlsx --history data\history_projects.
 - 需要联网安装依赖；
 - 如果提示找不到 `python`，请先安装 Python 3.10+，并勾选“Add Python to PATH”。
 
+
+
+## 七、Windows 双击运行（自定义输入文件）
+
+如果你要分析“你自己的 Excel”，请双击：
+
+- `rail_cost_ai\run_custom.bat`
+
+它会先让你输入文件路径：
+1. 双击后会提示输入“综合概算 Excel 文件路径”；
+2. 你可以直接复制粘贴路径，或把 Excel 文件拖到窗口；
+3. 如果你直接按回车不输入，会自动使用 `samples\sample_budget.xlsx`。
+
+脚本会自动完成：
+- 创建虚拟环境；
+- 安装依赖；
+- 运行造价分析；
+- 输出到 `output` 文件夹；
+- 自动打开 `output` 文件夹。
+
+### run_custom.bat 使用步骤（超简单）
+1. 打开 `rail_cost_ai` 文件夹；
+2. 双击 `run_custom.bat`；
+3. 按提示输入 Excel 路径（或直接回车用示例）；
+4. 等待执行完成；
+5. 在自动打开的 `output` 文件夹查看结果。
+
