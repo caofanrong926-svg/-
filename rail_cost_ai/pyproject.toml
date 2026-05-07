@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rail-cost-ai"
+version = "0.1.0"
+description = "轨道交通造价AI分析工具"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2.0",
+  "openpyxl>=3.1.0",
+  "python-docx>=1.1.0",
+  "XlsxWriter>=3.2.0"
+]
+
+[project.scripts]
+rail-cost-ai = "rail_cost_ai.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
